@@ -1,10 +1,9 @@
+import Homepage from '@/components/Homepage';
 import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
-import { Text } from '@/components/ui/text';
 import '@/global.css';
 import { ThemeContext } from '@/src/context/ThemeContext';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useState } from 'react';
 import 'react-native-reanimated';
@@ -59,15 +58,8 @@ function RootLayoutNav() {
 
   return (
     <ThemeContext.Provider value={{ colorMode, toggleColorMode }}>
-      <GluestackUIProvider mode="light">
-        <Stack
-          screenOptions={{
-            contentStyle: { backgroundColor: '#fff' },
-            header: () => <Text>here goes the header</Text>,
-          }}
-        >
-          <Stack.Screen name="index" />
-        </Stack>
+      <GluestackUIProvider mode={colorMode}>
+        <Homepage />
       </GluestackUIProvider>
     </ThemeContext.Provider>
   );
