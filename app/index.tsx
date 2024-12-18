@@ -1,6 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { Text } from '@/components/ui/text';
+import { StyleSheet, View } from 'react-native';
 
-import { Text, View } from '@/components/Themed';
+// import { Text, View } from '@/components/Themed';
 
 export default function Index() {
   return (
@@ -14,6 +15,6 @@ const styles = StyleSheet.create({
   content: {
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100%'
-  }
-})
+    height: '100%',
+  },
+});
