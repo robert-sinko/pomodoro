@@ -1,6 +1,6 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Controls from './Controls';
 import Header from './Header';
+import Timer from './Timer';
 import { Box } from './ui/box';
 
 export default function Homepage() {
@@ -9,7 +9,7 @@ export default function Homepage() {
       <Header />
       <Box className="h-full items-center justify-center">
         <Controls />
-        <FontAwesome name="play" size={48} className="text-typography-800" />
+        <Timer />
       </Box>
     </Box>
   );
