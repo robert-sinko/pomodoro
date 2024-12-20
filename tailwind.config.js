@@ -162,6 +162,12 @@ module.exports = {
           info: 'rgb(var(--color-indicator-info)/<alpha-value>)',
           error: 'rgb(var(--color-indicator-error)/<alpha-value>)',
         },
+        pomodoro: {
+          background: 'rgb(var(--color-pomodoro-background)/<alpha-value>)',
+          main: 'rgb(var(--color-pomodoro-main)/<alpha-value>)',
+          primary: 'rgb(var(--color-pomodoro-primary)/<alpha-value>)',
+          typography: 'rgb(var(--color-pomodoro-typography)/<alpha-value>)',
+        },
       },
       fontFamily: {
         heading: undefined,

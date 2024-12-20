@@ -1,4 +1,5 @@
 'use client';
+
 import { vars } from 'nativewind';
 
 export const config = {
@@ -153,6 +154,12 @@ export const config = {
     '--color-indicator-primary': '55 55 55',
     '--color-indicator-info': '83 153 236',
     '--color-indicator-error': '185 28 28',
+
+    /* App related colors */
+    '--color-pomodoro-background': '223 236 250',
+    '--color-pomodoro-main': '171 199 246',
+    '--color-pomodoro-primary': '243 112 112',
+    '--color-pomodoro-typography': '216 223 255',
   }),
   dark: vars({
     '--color-primary-0': '166 166 166',
@@ -305,5 +312,11 @@ export const config = {
     '--color-indicator-primary': '247 247 247',
     '--color-indicator-info': '161 199 245',
     '--color-indicator-error': '232 70 69',
+
+    /* App related colors */
+    '--color-pomodoro-background': '31 34 64',
+    '--color-pomodoro-main': '22 25 51',
+    '--color-pomodoro-primary': '243 112 112',
+    '--color-pomodoro-typography': '216 223 255',
   }),
 };
